@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// Central Server decides how many Terminals and Counters there is
+/// </summary>
 namespace BagageSortingSystem
 {
     public class CentralServer

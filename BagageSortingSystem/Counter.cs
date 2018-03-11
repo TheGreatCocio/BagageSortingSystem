@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// A Counter Class
+/// </summary>
 namespace BagageSortingSystem
 {
     class Counter

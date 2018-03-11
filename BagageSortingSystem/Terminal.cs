@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// Terminal Class 
+/// </summary>
 namespace BagageSortingSystem
 {
     public class Terminal
@@ -26,7 +28,8 @@ namespace BagageSortingSystem
             terminalNum = terminalNumIncrementer++;
             FlightPlan = new FlightPlan(terminalNum);
         }
-
+        // Each Terminal has its own Conveyor and is 
+        //is responsible for dequeueing its own and throw it on the plane
         public void DequeueBagage()
         {            
             Bagage bagage = terminalConveyor.Dequeue();

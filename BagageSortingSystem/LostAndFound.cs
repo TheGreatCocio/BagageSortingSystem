@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// If a terminal closes before all bagage is boarded it lands here
+/// </summary>
 namespace BagageSortingSystem
 {
     public class LostAndFound

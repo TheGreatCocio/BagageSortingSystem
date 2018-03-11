@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
-
+/// <summary>
+/// Flight Plan Class 
+/// </summary>
 namespace BagageSortingSystem
 {
     public class FlightPlan
@@ -20,10 +22,10 @@ namespace BagageSortingSystem
         {
             TerminalNumber = terminalNumber;
         }
-
+        // Sets the timer before the next plane leaves
         public void NewPlane()
         {
-            timeBeforeLiftoff = DateTime.UtcNow.AddSeconds(rnd.Next(50,300)); 
+            timeBeforeLiftoff = DateTime.UtcNow.AddSeconds(rnd.Next(20,50)); 
         }
     }
 }

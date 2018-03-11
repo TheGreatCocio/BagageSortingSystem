@@ -20,7 +20,7 @@ namespace BagageSortingSystem
             Destination = destination;
             BagageId = BagageIdGenerator();
         }
-
+        // Generates a unused ID for a new Bagage
         private int BagageIdGenerator()
         {
             Random rnd = new Random();

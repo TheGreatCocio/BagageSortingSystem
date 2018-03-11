@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// Generates new random Bagage 
+/// </summary>
 namespace BagageSortingSystem
 {
     public class BagageFactory
@@ -15,7 +17,7 @@ namespace BagageSortingSystem
             int num = rnd.Next(1, 5);
             switch (num)
             {
-                case 1:
+                case 1: // If the terminal is open then create a new Bagage
                     if (SortingMachine.Instance.Terminals[(int)DestinationsEnum.Barcelona - 1].Open)
                     {
                         return new Bagage(DestinationsEnum.Barcelona.ToString());
